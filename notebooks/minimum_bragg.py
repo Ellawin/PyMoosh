@@ -16,7 +16,7 @@ th_2 = wavelength / (4 * mat_2)
 
 materials = [1, mat_1**2, mat_2**2]
 
-lay_pairs = 3 #7 couches 
+lay_pairs = 10 #7 couches 
 
 stack = [0] + [1, 2] * lay_pairs + [1, 0]
 
@@ -72,3 +72,5 @@ ep2_found = ep_list[indices[1]]
 print("La réflectivité maximale vaut", val_max)
 print("L'épaisseur du premier matériau est", ep1_found)
 print("L'épaisseur du second matériau est", ep2_found)
+
+### "bfgs s'arrête dessus quand il le trouve... donc c'est un minimum local"
